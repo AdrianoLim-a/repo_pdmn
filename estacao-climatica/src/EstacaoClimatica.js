@@ -9,25 +9,28 @@ export default class EstacaoClimatica extends Component {
     state = {
         data: null
     }
-
-    componentDidMount() {
-        this.timer = setInterval(() => {
-            const dataAtual = new Date().toLocaleDateString()
-            // this.state.data = dataAtual
-            this.setState({ data: dataAtual })
-        }, 1000)
-    }
     constructor(props) {
         super(props)
         console.log('EC:Constructor')
     }
+    componentDidMount() {
+        console.log('EC:componentDidMount')
+        this.timer = setInterval(() => {
+            const dataAtual = new Date().toLocaleTimeString()
+            // this.state.data = dataAtual
+            this.setState({ data: dataAtual })
+        }, 1000)
+    }
+
     componentDidUpdate() {
         console.log('EC: componentDidUpdate')
     }
     componentWillUnmount() {
         console.log('EC: componetDidUnmount')
+        clearInterval(this.timer)
     }
     render() {
+        console.log('EC:render')
         return (
             <div className="card">
                 <div className="card-body">
@@ -42,10 +45,7 @@ export default class EstacaoClimatica extends Component {
                             this.props.latitude ?
                                 `Cordenadas: ${this.props.latitude}, ${this.props.longitude}. Data: ${this.state.data}`
                                 :
-                                this.props.mensagemDeErro ?
-                                    this.props.mensagemDeErro
-                                    :
-                                    'Clique no botão para saber qual a sua estação climática'
+                                'Clique no botão para saber qual a sua estação climática'
                         }
                     </p>
                     <button
@@ -53,9 +53,13 @@ export default class EstacaoClimatica extends Component {
                         className='btn btn-outline-primary w-100 mt-2'>
                         Descubra a sua estação climática
                     </button>
-                    <button onClick={() =>
-                        ReactDOM.unmountComponentAtNode(document.querySelector('#root'))
-                    } className='btn btn-outline-danger w-100 mt-2'>
+                    <button
+                        className="btn btn-outline-danger w-100 mt-2"
+                        onClick={() => {
+                            ReactDOM.unmountComponentAtNode(
+                                document.querySelector('#root')
+                            )
+                        }}>
                         Unmount
                     </button>
                 </div>

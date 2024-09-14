@@ -18,21 +18,22 @@ class App extends React.Component {
     }
     constructor(props) {
         super(props)
-        /* this.state = {
-             latitude: null,
-             longitude: null,
-             estacao: null,
-             data: null,
-             icone: null,
-             mensagemDeErro: null
-             
-         }*/
+        // this.state = {
+        //    latitude: null,
+        //     longitude: null,
+        //     estacao: null,
+        //     data: null,
+        //    icone: null,
+        //    mensagemDeErro: null
+        //    
+        //}
         console.log('constructor')
 
     }
 
     componentDidMount() {
         console.log('componentDidMount')
+        this.obterLocalizacao()
     }
     componentDidUpdate() {
         console.log('componentDidUpdate')
@@ -77,11 +78,14 @@ class App extends React.Component {
                 longitude: posicao.coords.longitude,
                 estacao: estacao,
                 data: dataAtual.toLocaleString(),
-                icone: icone,
-                mensagemDeErro: 'Tente novamente mais tarde'
+                icone: icone
             })
-
-        })
+        },
+            (erro) => {
+                console.log(erro)
+                this.setState({ mensagemDeErro: 'Tente novamente mais tarde' })
+            }
+        )
     }
 
     icones = {
@@ -98,22 +102,21 @@ class App extends React.Component {
                     <div className="col-sm12 col-md-8">
                         {
                             (!this.state.latitude && !this.state.mensagemDeErro) ?
-                            <Loading />
-                            :
-                            this.state.mensagemDeErro ?
-                            <p className='border round p-2 fs-5 text-center'>
-                                É preciso dar permissão de acesso a localização
-                            </p>
-                            :
-                            
-                            <EstacaoClimatica
-                                icone={this.state.icone}
-                                estacao={this.state.estacao}
-                                latitude={this.state.latitude}
-                                longitude={this.state.longitude}
-                                mensagemDeErro={this.state.mensagemDeErro}
-                                obterLocalizacao={this.obterLocalizacao}
-                            />
+                                <Loading />
+                                :
+                                this.state.mensagemDeErro ?
+                                    <p className='border round p-2 fs-5 text-center'>
+                                        É preciso dar permissão de acesso a localização
+                                    </p>
+                                    :
+                                    <EstacaoClimatica
+                                        icone={this.state.icone}
+                                        estacao={this.state.estacao}
+                                        latitude={this.state.latitude}
+                                        longitude={this.state.longitude}
+                                        mensagemDeErro={this.state.mensagemDeErro}
+                                        obterLocalizacao={this.obterLocalizacao}
+                                    />
                         }
                     </div>
                 </div>
