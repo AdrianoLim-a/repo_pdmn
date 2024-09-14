@@ -3,20 +3,43 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import EstacaoClimatica from './EstacaoClimatica'
+import Loading from './Loading'
 
 class App extends React.Component {
+
+    state = {
+        latitude: null,
+        longitude: null,
+        estacao: null,
+        data: null,
+        icone: null,
+        mensagemDeErro: null,
+    }
     constructor(props) {
         super(props)
-        this.state = {
-            latitude: null,
-            longitude: null,
-            estacao: null,
-            data: null,
-            icone: null,
-            mensagemDeErro: null
-        }
+        /* this.state = {
+             latitude: null,
+             longitude: null,
+             estacao: null,
+             data: null,
+             icone: null,
+             mensagemDeErro: null
+             
+         }*/
+        console.log('constructor')
+
     }
 
+    componentDidMount() {
+        console.log('componentDidMount')
+    }
+    componentDidUpdate() {
+        console.log('componentDidUpdate')
+    }
+    componentWillUnmount() {
+        console.log('componentWillUnmount')
+    }
     obterEstacao = (data, latitude) => {
         const anoAtual = data.getFullYear()
         //new Date(ano, mes dia ) :  mes de 0 a 11, dia de 1 a 31
@@ -68,39 +91,32 @@ class App extends React.Component {
         'Inverno': 'fa-snowflake',
     }
     render() {
+        console.log('render')
         return (
             <div className='contaneir p4 border mt-2'>
                 <div className=" row justify-content-center">
                     <div className="col-sm12 col-md-8">
-                        <div className="card">
-                            <div className="card-body">
-                                <div
-                                    style={{ height: '6rem' }}
-                                    className='d-flex align-items-center rounded mb-2 '>
-                                    <i className={`fa-solid fa-5x ${this.state.icone}`}></i>
-                                    <p className="w-75 ms-3 text-center fs-1">{this.state.estacao}</p>
-                                </div>
-                                <p className='text-center'>
-                                    {
-                                        this.state.latitude ?
-                                            `Cordenadas: ${this.state.latitude}, ${this.state.longitude}. Data: ${this.state.data}`
-                                            :
-                                            this.state.mensagemDeErro ?
-                                                this.state.mensagemDeErro
-                                                :
-                                                'Clique no botão para saber qual a sua estação climática'
-                                    }
-                                </p>
-                                <button
-                                    onClick={this.obterLocalizacao}
-                                    className='btn btn-outline-primary w-100 mt-2'>
-                                    Clique Aqui
-                                </button>
-                            </div>
-                        </div>
+                        {
+                            (!this.state.latitude && !this.state.mensagemDeErro) ?
+                            <Loading />
+                            :
+                            this.state.mensagemDeErro ?
+                            <p className='border round p-2 fs-5 text-center'>
+                                É preciso dar permissão de acesso a localização
+                            </p>
+                            :
+                            
+                            <EstacaoClimatica
+                                icone={this.state.icone}
+                                estacao={this.state.estacao}
+                                latitude={this.state.latitude}
+                                longitude={this.state.longitude}
+                                mensagemDeErro={this.state.mensagemDeErro}
+                                obterLocalizacao={this.obterLocalizacao}
+                            />
+                        }
                     </div>
                 </div>
-
             </div>
         )
     }
