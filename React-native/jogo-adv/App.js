@@ -11,7 +11,7 @@ import TelaComecoDoJogo from './telas/TelaComecoDoJogo';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Cabecalho titulo={"Adivinha qual é o número"} />
+      <Cabecalho titulo={"Adivinha qual é o número ?"} />
       <TelaComecoDoJogo/>
     </View>
   );
