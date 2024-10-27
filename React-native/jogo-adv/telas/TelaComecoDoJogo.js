@@ -12,23 +12,26 @@ import Cores from '../cores/Cores';
 const TelaComecoDoJogo = (props) => {
 
     const [numeroGerado, setNumeroGerado] = useState(null);
+    const [contador, setContador] = useState(1);
     const [mensagem, setMensagem] = useState('');
 
     const gerarNumero = (numeroEntrada) => {
         // Gera um número aleatório entre 0 e 10
         const novoNumero = Math.floor(Math.random() * 11);
         setNumeroGerado(novoNumero);
+        setContador(parseInt(contador + 1))
         if (novoNumero !== parseInt(numeroEntrada)) {
             setMensagem("Número errado, tente novamente");
         } else {
-            setMensagem("Acertou!");
-            
+            setMensagem(` Acertou em ${contador} tentativas` )
         }
+        
     }
 
     const reiniciarJogo = () => {
         setNumeroGerado(null);
         setMensagem('');
+        setContador(0)
         
     }
 
@@ -66,7 +69,6 @@ const TelaComecoDoJogo = (props) => {
             <View>
                 {mensagem ? <Text style={styles.textoFeedback}>{mensagem}</Text> : null}
             </View>
-
         </View>
     )
 
