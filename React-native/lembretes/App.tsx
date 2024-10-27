@@ -6,7 +6,6 @@ import {
   TextInput,
   View
 } from 'react-native';
-
 import { EvilIcons } from '@expo/vector-icons';
 import {
   useState
@@ -29,6 +28,8 @@ export default function App() {
     setLembrete('')
 
   }
+
+  
   return (
     <View style={styles.container}>
       <TextInput
