@@ -1,9 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import ENV from './env';
 import * as firebase from 'firebase';
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import React from 'react';
+import {
+  Button,
+  StyleSheet,
+  TextInput,
+  View
+} from 'react-native';
+import ENV from './env';
 
 if (!firebase.apps.length)
   firebase.initializeApp(ENV);
@@ -11,8 +14,12 @@ if (!firebase.apps.length)
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <TextInput style={styles.entrada} placeholder='Digite seu lembrete' />
+      <View>
+        <Button
+          title='OK'
+        />
+      </View>
     </View>
   );
 }
@@ -24,4 +31,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  entrada: {
+    borderBottomColor: "#DDD",
+    borderBottomWidth: 1,
+    fontSize: 14,
+    textAlign: 'center',
+    width: '80%',
+    marginBottom: 8
+  },
+
+  botao: {
+    width: '80%'
+  }
 });
