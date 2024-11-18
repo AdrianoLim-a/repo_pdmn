@@ -81,16 +81,22 @@ npx react-native run-ios
 ##Como Contribuir
 
 Faça um fork do projeto.
+
 Crie uma nova branch:
 bash
+
 Copiar código
 git checkout -b minha-feature
+
 Realize suas alterações e faça commit:
 bash
+
 Copiar código
 git commit -m "Descrição da alteração"
+
 Envie para o repositório remoto:
 bash
+
 Copiar código
 git push origin minha-feature
 Abra um Pull Request.
