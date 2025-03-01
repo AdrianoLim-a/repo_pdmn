@@ -1,41 +1,43 @@
 # repo_pdmn
 
-> Repositório contendo projetos desenvolvidos em React e React Native
+> 🚀 Repositório contendo projetos desenvolvidos em **React** e **React Native**
 
-![GitHub repo size](https://img.shields.io/github/repo-size/AdrianoLim-a/repo_pdmn)
-![GitHub contributors](https://img.shields.io/github/contributors/AdrianoLim-a/repo_pdmn)
-![GitHub license](https://img.shields.io/github/license/AdrianoLim-a/repo_pdmn)
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/AdrianoLim-a/repo_pdmn" alt="GitHub repo size">
+  <img src="https://img.shields.io/github/contributors/AdrianoLim-a/repo_pdmn" alt="GitHub contributors">
+  <img src="https://img.shields.io/github/license/AdrianoLim-a/repo_pdmn" alt="GitHub license">
+</p>
 
 ## 📖 Descrição
 
 Este repositório contém múltiplos projetos desenvolvidos em **React** e **React Native**, abrangendo conceitos fundamentais e aplicações mais avançadas.
 
-### Projetos em React
+### 📌 Projetos em React
 
-1. **Estação Climática** 🌦️
+1. **🌦️ Estação Climática**
    - Utiliza ferramentas de **geolocalização** para exibir informações sobre o clima da região do usuário.
    
-2. **Exibição de Imagens** 📸
+2. **📸 Exibição de Imagens**
    - Consome a API **Pexels** para buscar e exibir imagens com base nos termos pesquisados pelo usuário.
    
-3. **Projeto Inicial** 🏗️
+3. **🏗️ Projeto Inicial**
    - Criado para aprendizado dos principais conceitos do React, incluindo **componentização**, **props** e **estado**.
 
-### Projetos em React Native
+### 📌 Projetos em React Native
 
-1. **Jogo de Adivinhação** 🎲
+1. **🎲 Jogo de Adivinhação**
    - O usuário escolhe um número entre 1 e 10, enquanto o sistema gera um número aleatório para verificar se há correspondência.
    
-2. **Aplicativo de Clima** ☁️
+2. **☁️ Aplicativo de Clima**
    - Utiliza a API **OpenWeatherMap** para exibir previsões do tempo com base na localização do usuário.
    
-3. **Aplicativo de Lembretes** 📝
+3. **📝 Aplicativo de Lembretes**
    - Permite criar e gerenciar lembretes diários.
    
-4. **Lembretes com Salvamento (em desenvolvimento)** 🔄
+4. **🔄 Lembretes com Salvamento (em desenvolvimento)**
    - Versão aprimorada do aplicativo de lembretes, adicionando **persistência de dados** para salvar as anotações do usuário.
 
-## 🚀 Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 - [React](https://reactjs.org/)
 - [React Native](https://reactnative.dev/)
@@ -48,7 +50,6 @@ Este repositório contém múltiplos projetos desenvolvidos em **React** e **Rea
 
 ```bash
 # Clone este repositório
-
 git clone https://github.com/AdrianoLim-a/repo_pdmn.git
 
 # Acesse a pasta do projeto
