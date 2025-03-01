@@ -26,7 +26,7 @@ Este repositório contém múltiplos projetos desenvolvidos em **React** e **Rea
 ### 📌 Projetos em React Native
 
 1. **🎲 Jogo de Adivinhação**
-   - O usuário escolhe um número entre 1 e 10, enquanto o sistema gera um número aleatório e um contador de tentativas até que o numero seja descoberto.
+   - O usuário escolhe um número entre 1 e 10, enquanto o sistema gera um número aleatório e um contador computa as tentativas até que o numero seja descoberto.
    
 2. **☁️ Aplicativo de Clima**
    - Utiliza a API **OpenWeatherMap** para exibir previsões do tempo com base na cidade que o usuário digitar.
