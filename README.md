@@ -15,7 +15,7 @@ Este repositório contém múltiplos projetos desenvolvidos em **React** e **Rea
 ### 📌 Projetos em React
 
 1. **🌦️ Estação Climática**
-   - Utiliza ferramentas de **geolocalização** para exibir informações sobre o clima da região do usuário.
+   - Utiliza ferramentas de **geolocalização** para exibir a estação climática do ano atualmente.
    
 2. **📸 Exibição de Imagens**
    - Consome a API **Pexels** para buscar e exibir imagens com base nos termos pesquisados pelo usuário.
@@ -26,10 +26,10 @@ Este repositório contém múltiplos projetos desenvolvidos em **React** e **Rea
 ### 📌 Projetos em React Native
 
 1. **🎲 Jogo de Adivinhação**
-   - O usuário escolhe um número entre 1 e 10, enquanto o sistema gera um número aleatório para verificar se há correspondência.
+   - O usuário escolhe um número entre 1 e 10, enquanto o sistema gera um número aleatório e um contador de tentativas até que o numero seja descoberto.
    
 2. **☁️ Aplicativo de Clima**
-   - Utiliza a API **OpenWeatherMap** para exibir previsões do tempo com base na localização do usuário.
+   - Utiliza a API **OpenWeatherMap** para exibir previsões do tempo com base na cidade que o usuário digitar.
    
 3. **📝 Aplicativo de Lembretes**
    - Permite criar e gerenciar lembretes diários.
