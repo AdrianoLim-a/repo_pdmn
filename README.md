@@ -1,109 +1,88 @@
-## Descrição do Projeto
+# repo_pdmn
 
-Este repositório contém projetos desenvolvidos no contexto do curso de **Programação para Dispositivos Móveis e Noções (PDMN)**. Ele explora conceitos fundamentais do desenvolvimento front-end e mobile, utilizando as tecnologias React e React Native. Cada projeto apresenta funcionalidades específicas para aprimorar habilidades de desenvolvimento.
+> Repositório contendo projetos desenvolvidos em React e React Native
 
----
+![GitHub repo size](https://img.shields.io/github/repo-size/AdrianoLim-a/repo_pdmn)
+![GitHub contributors](https://img.shields.io/github/contributors/AdrianoLim-a/repo_pdmn)
+![GitHub license](https://img.shields.io/github/license/AdrianoLim-a/repo_pdmn)
 
-## Estrutura do Repositório
+## 📖 Descrição
 
-### React Native
-- **Aplicativo de Previsão do Clima:** Consulta dados de uma API externa chamada OpenWeatherMap para exibir previsões meteorológicas.
-- **Jogo de Adivinhação:** Um jogo simples onde o usuário tenta adivinhar números entre 1 e 10.
-- **Aplicativo de Lembretes:** Permite criar, visualizar e gerenciar lembretes.
+Este repositório contém múltiplos projetos desenvolvidos em **React** e **React Native**, abrangendo conceitos fundamentais e aplicações mais avançadas.
 
-### React
-- **Estação Climática:** Determina e exibe a estação do ano com base na localização do usuário.
-- **Busca de Imagens:** Permite buscar e exibir imagens utilizando a API externa Pexels.
+### Projetos em React
 
----
+1. **Estação Climática** 🌦️
+   - Utiliza ferramentas de **geolocalização** para exibir informações sobre o clima da região do usuário.
+   
+2. **Exibição de Imagens** 📸
+   - Consome a API **Pexels** para buscar e exibir imagens com base nos termos pesquisados pelo usuário.
+   
+3. **Projeto Inicial** 🏗️
+   - Criado para aprendizado dos principais conceitos do React, incluindo **componentização**, **props** e **estado**.
 
-## Tecnologias Utilizadas
+### Projetos em React Native
 
-### Linguagem Base
-- **JavaScript / TypeScript**
+1. **Jogo de Adivinhação** 🎲
+   - O usuário escolhe um número entre 1 e 10, enquanto o sistema gera um número aleatório para verificar se há correspondência.
+   
+2. **Aplicativo de Clima** ☁️
+   - Utiliza a API **OpenWeatherMap** para exibir previsões do tempo com base na localização do usuário.
+   
+3. **Aplicativo de Lembretes** 📝
+   - Permite criar e gerenciar lembretes diários.
+   
+4. **Lembretes com Salvamento (em desenvolvimento)** 🔄
+   - Versão aprimorada do aplicativo de lembretes, adicionando **persistência de dados** para salvar as anotações do usuário.
 
-### Frameworks
-- **React:** Para o desenvolvimento de aplicações web.
-- **React Native:** Para o desenvolvimento de aplicativos móveis multiplataforma.
+## 🚀 Tecnologias Utilizadas
 
-### APIs Externas
-- **OpenWeatherMap:** Para a previsão do clima.
-- **Pexels:** Para busca e exibição de imagens.
+- [React](https://reactjs.org/)
+- [React Native](https://reactnative.dev/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [TypeScript](https://www.typescriptlang.org/)
+- [OpenWeatherMap API](https://openweathermap.org/api)
+- [Pexels API](https://www.pexels.com/api/)
 
----
+## 📥 Instalação
 
-## Configuração do Ambiente
+```bash
+# Clone este repositório
 
-### Pré-requisitos
-1. Certifique-se de ter as seguintes ferramentas instaladas:
-   - Node.js (versão recomendada: LTS)
-   - NPM ou Yarn
-   - IDE ou editor de código, como VS Code
-   - Emulador ou dispositivo físico para testar projetos React Native.
+git clone https://github.com/AdrianoLim-a/repo_pdmn.git
 
-2. Clone o repositório:
-   ```bash
-   git clone https://github.com/AdrianoLim-a/repo_pdmn.git
-Navegue até o diretório do projeto que deseja executar:
+# Acesse a pasta do projeto
+cd repo_pdmn
 
-bash
-Copiar código
-cd nome_do_projeto
-Instale as dependências:
-
-bash
-Copiar código
+# Instale as dependências
 npm install
-Executando os Projetos
-Para Projetos React
-Navegue até o diretório do projeto React desejado.
-Inicie o servidor de desenvolvimento:
-bash
-Copiar código
+
+# Inicie o ambiente de desenvolvimento
 npm start
-Acesse o projeto no navegador em http://localhost:3000.
-Para Projetos React Native
-Navegue até o diretório do projeto React Native desejado.
-Inicie o servidor Metro:
-bash
-Copiar código
-npx react-native start
-Execute o aplicativo:
-Para Android:
-bash
-Copiar código
-npx react-native run-android
-Para iOS:
-bash
-Copiar código
-npx react-native run-ios
+```
 
-## Como Contribuir
+## 🚀 Uso
 
-Faça um fork do projeto.
+1. Para os projetos React, abra o navegador em `http://localhost:3000`.
+2. Para os projetos React Native, conecte um dispositivo físico ou utilize um emulador.
+3. Utilize `npm run android` ou `npm run ios` para rodar os apps no React Native.
 
-Crie uma nova branch:
-bash
+## 🤝 Contribuição
 
-Copiar código
-   ```
-git checkout -b minha-feature
-   ```
+Contribuições são sempre bem-vindas! Para contribuir:
 
-Realize suas alterações e faça commit:
+1. Faça um fork do projeto.
+2. Crie uma branch com sua feature (`git checkout -b minha-feature`).
+3. Commit suas alterações (`git commit -m 'Adiciona minha feature'`).
+4. Faça um push para a branch (`git push origin minha-feature`).
+5. Abra um Pull Request.
 
-bash
+## 📄 Licença
 
-Copiar código
-   ```
-git commit -m "Descrição da alteração"
-   ```
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-Envie para o repositório remoto:
-bash
+## 📞 Contato
 
-Copiar código
-   ```
-git push origin minha-feature
-   ```
-Abra um Pull Request.
+Caso tenha dúvidas ou sugestões, entre em contato:
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adriano%20Lima-blue)]([https://www.linkedin.com/in/adriano-lima](https://www.linkedin.com/in/adriano-lima-da-silva-abbb6511a/)
