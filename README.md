@@ -86,4 +86,4 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Caso tenha dúvidas ou sugestões, entre em contato:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adriano%20Lima-blue)]([https://www.linkedin.com/in/adriano-lima](https://www.linkedin.com/in/adriano-lima-da-silva-abbb6511a/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adriano%20Lima-blue)]([https://www.linkedin.com/in/adriano-lima](https://www.linkedin.com/in/adriano-lima-da-silva-abbb6511a/))
