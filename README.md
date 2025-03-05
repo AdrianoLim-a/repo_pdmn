@@ -39,12 +39,13 @@ Este repositório contém múltiplos projetos desenvolvidos em **React** e **Rea
 
 ## 🛠️ Tecnologias Utilizadas
 
-| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40"> React](https://reactjs.org/) |
-| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40"> React Native](https://reactnative.dev/) |
-| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40"> JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) |
-| [<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40"> TypeScript](https://www.typescriptlang.org/) |
-| [<img src="https://upload.wikimedia.org/wikipedia/commons/6/69/OpenWeather-Logo.jpg" width="40"> OpenWeatherMap API](https://openweathermap.org/api) |
-| [<img src="https://images.pexels.com/lib/api/pexels.png" width="40"> Pexels API](https://www.pexels.com/api/) |
+- [![React](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg)](https://reactjs.org/) **React**
+- [![React Native](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg)](https://reactnative.dev/) **React Native**
+- [![JavaScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript) **JavaScript**
+- [![TypeScript](https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg)](https://www.typescriptlang.org/) **TypeScript**
+- [![OpenWeatherMap](https://upload.wikimedia.org/wikipedia/commons/6/69/OpenWeather-Logo.jpg)](https://openweathermap.org/api) **OpenWeatherMap API**
+- [![Pexels](https://images.pexels.com/lib/api/pexels.png)](https://www.pexels.com/api/) **Pexels API**
+
 
 ## 📥 Instalação
 
