@@ -39,12 +39,12 @@ Este repositório contém múltiplos projetos desenvolvidos em **React** e **Rea
 
 ## 🛠️ Tecnologias Utilizadas
 
-- [React](https://reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [TypeScript](https://www.typescriptlang.org/)
-- [OpenWeatherMap API](https://openweathermap.org/api)
-- [Pexels API](https://www.pexels.com/api/)
+- [React](https://reactjs.org/) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/> |
+- [React Native](https://reactnative.dev/) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="40" height="40"/> |
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" height="40"/> |
+- [TypeScript](https://www.typescriptlang.org/) | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="40" height="40"/> |
+- [OpenWeatherMap API](https://openweathermap.org/api) | 🌍 |
+- [Pexels API](https://www.pexels.com/api/) | 📷 |
 
 ## 📥 Instalação
 
