@@ -30,6 +30,7 @@ export default function App() {
     .then((dados) => {
       setPrevisoes(dados["list"])
       Keyboard.dismiss()
+      console.log(item.weather[0].description)
     });
   }
 
@@ -79,3 +80,4 @@ const styles = StyleSheet.create({
     marginBottom: 8
   }
 });
+

@@ -4,6 +4,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "bootstrap": "^5.3.3",
+    "expo": "^53.0.13",
     "firebase": "^11.0.1"
   }
 }
